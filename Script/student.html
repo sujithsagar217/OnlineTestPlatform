@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(175, 102, 102);
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.viewExams{
+    background: rgb(28, 184, 65);
+   
+  }
+  div {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightgoldenrodyellow;
+}
+#Subject{
+    border-collapse: separate;
+    border-spacing: 150px;
+}
+</style>
+</head>
+
+
+<ul>
+    <li><a href="badges.html">Home</a></li>
+    <li><a href="mobile.html">About</a></li>
+  <li style="float:right"><a href="#logout">Logout</a></li>
+</ul>
+<body>
+    <center>
+    <div id="Subject">
+        Subject 1
+        <button type=submit class="button-viewExams block">View Exams</button>
+    </div>
+    <div id="Subject">
+        Subject 2
+        <button type=submit class="button-viewExams block">View Exams</button>
+    </div>
+    <div id="Subject">
+        Subject 3
+        <button type=submit class="button-viewExams block">View Exams</button>
+    </div>
+    <div id="Subject">
+        Subject 4
+        <button type=submit class="button-viewExams block">View Exams</button>
+    </div>
+</center>
+
+
+
+</body>
+</html>
