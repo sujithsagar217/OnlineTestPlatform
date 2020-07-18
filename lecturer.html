@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OnlineExam Portal">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>OnlineExam</title>
+  <script src="Script/lecturer.js"></script>
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Online Exam Portal</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Profile</a></li>
+        <li><a href="createExam.html">Create exam</a></li>
+        <li><a href="results.html">View Results</a></li>
+        <li><a href="mobile.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Profile</a></li>
+    <li><a href="createExam.html">Create exam</a></li>
+    <li><a href="results.html">View Results</a></li>
+    <li><a href="mobile.html">Logout</a></li>
+  </ul>
+
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-body">
+        <div class="basic-details-group">
+          <!-- name row -->
+          <div class="row">
+            <div class="col-2">
+              <p> Name: </p>
+            </div>
+            <div class="col-10">
+              <p id="name"> Lecturer name</p>
+            </div>
+          </div>
+          <!-- end of name row -->
+          
+          <!-- mail id row -->
+          <div class="row">
+            <div class="col-2">
+              <p> Mail ID: </p>
+            </div>
+            <div class="col-10">
+              <p class="mail-id" id="mail"> lecturer@gmail.com</p>
+            </div>
+          </div>
+          <!-- end of mail id -->
+
+          <!-- branch row -->
+          <div class="row">
+            <div class="col-2">
+              <p> Branch: </p>
+            </div>
+            <div class="col-10">
+              <p class="branch" id="mail"> lecturer branch</p>
+            </div>
+          </div>
+          <!-- end of branch -->
+
+           <!-- college name  -->
+           <div class="row">
+            <div class="col-2">
+              <p> College: </p>
+            </div>
+            <div class="col-10">
+              <p class="college_name" id="mail"> college name</p>
+            </div>
+          </div>
+          <!-- end of college name -->
+
+          <button type="button" class="btn btn-primary">Edit Profile</button>  
+          <button type="button" class="btn btn-primary">Change Password</button>        
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -29,4 +29,15 @@ body{
 .forgot-link label{
   margin-bottom: 0;
 }
-
+.card{
+  width:75%;
+  justify-content:center;
+  box-shadow:0 16px 32px 0 rgba(43, 43, 43, 0.7);
+  margin:auto;
+  padding:auto;
+}
+.basic-details-group{
+  background-color: rgb(200, 229, 255);
+  color: rgb(8, 8, 8);
+  padding: 5px;
+}
