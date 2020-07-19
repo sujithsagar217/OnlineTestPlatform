@@ -5,16 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="OnlineExam Portal">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Montserrat|Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <title>OnlineExam</title>
   <script src="Script/lecturer.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -42,6 +45,10 @@
     <li><a href="index.html">Logout</a></li>
   </ul>
 
+  <div class="clg_details">
+    <h3>College Name</h3>
+    <p>College address</p>
+  </div>
   <div class="container-fluid">
     <div class="card">
       <div class="card-body">
@@ -90,6 +97,7 @@
           </div>
           <!-- end of college name -->
 
+<<<<<<< HEAD
           <button type="button" class="btn btn-primary">Edit Profile</button>
           <button type="button" class="btn btn-primary">Change Password</button>
 
@@ -97,6 +105,89 @@
       </div>
     </div>
 
+=======
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit Profile</button>
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Profile</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="edit-profile-container d-flex align-items-center ">
+                    <form class="login-form">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="fname" placeholder="Enter First name" name="First name">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="lname" placeholder="Enter Last name" name="Last name">
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="form-control" id="Phno" placeholder="Enter Phone number" name="Phone number">
+                      </div>
+                      <div class="form-group">
+                        <label>Address:</label>
+                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                      </div>
+                      <label>Select State</label>
+                      <select class="form-control" id="sel1">
+                        <option>Andhra Pradesh</option>
+                        <option>Telangana</option>
+                        <option>Tamil Nadu</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+               
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Change Password</button>
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal1">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Password</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>     
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Enter new password" name="new password">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="confirmaiton" placeholder="Confirm password" name="Confirm password">
+                  </div>
+                </div>
+
+                <!-- Modal footer -->
+               
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+                
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+>>>>>>> 7c6fb85939670a411bfaac437c922ca13462caeb
 </body>
 
 </html>
