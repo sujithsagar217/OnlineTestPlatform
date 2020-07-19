@@ -29,7 +29,6 @@ body{
 .forgot-link label{
   margin-bottom: 0;
 }
-
 .card{
   width:100%;
   justify-content:center;
@@ -41,5 +40,8 @@ body{
   background-color: rgb(200, 229, 255);
   color: rgb(8, 8, 8);
   padding: 5px;
+}
+.clg_details{
+  text-align: center;
 }
 
