@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +17,9 @@
   <script src="Script/student.js"></script>
 
 
-<!--
+
+
+  <!--
 <style>
 
 
@@ -69,18 +72,18 @@ li a:hover:not(.active) {
 
 </style>
 -->
-<style>
-  .ViewExams{
-    display: none;
-  }
-</style>
+  <style>
+    .ViewExams {
+      display: none;
+    }
+  </style>
 </head>
 <nav>
   <div class="nav-wrapper">
     <a href="#!" class="brand-logo">Online Exam Portal</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a onclick="displayProfile()" href="student.html">Profile</a></li>
+      <li><a onclick="displayProfile()" >Profile</a></li>
       <li><a onclick="viewExams()">View Exams</a></li>
       <li><a href="#">View Results</a></li>
       <li><a href="index.html">Logout</a></li>
@@ -89,7 +92,7 @@ li a:hover:not(.active) {
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-  <li><a onclick="displayProfile()" href="student.html">Profile</a></li>
+  <li><a onclick="displayProfile()" >Profile</a></li>
   <li><a onclick="viewExams()">View Exams</a></li>
   <li><a href="#">View Results</a></li>
   <li><a href="index.html">Logout</a></li>
@@ -97,85 +100,87 @@ li a:hover:not(.active) {
 
 <div id="student_Profile">
   <div class="container-fluid">
-  <div class="card">
-    <div class="card-body">
-      <div class="basic-details-group">
-        <!-- name row -->
-        <div class="row">
-          <div class="col-2">
-            <p> Name: </p>
+    <div class="card">
+      <div class="card-body">
+        <div class="basic-details-group">
+          <!-- name row -->
+          <div class="row">
+            <div class="col-2">
+              <p> Name: </p>
+            </div>
+            <div class="col-10">
+              <p id="name"> Student Name</p>
+            </div>
           </div>
-          <div class="col-10">
-            <p id="name"> Student Name</p>
+          <!-- end of name row -->
+
+          <!-- mail id row -->
+          <div class="row">
+            <div class="col-2">
+              <p> Mail ID: </p>
+            </div>
+            <div class="col-10">
+              <p class="mail-id" id="mail"> Student@gmail.com</p>
+            </div>
           </div>
+          <!-- end of mail id -->
+
+          <!-- branch row -->
+          <div class="row">
+            <div class="col-2">
+              <p> Branch: </p>
+            </div>
+            <div class="col-10">
+              <p class="branch" id="mail"> Student Branch</p>
+            </div>
+          </div>
+          <!-- end of branch -->
+
+          <!-- college name  -->
+          <div class="row">
+            <div class="col-2">
+              <p> College: </p>
+            </div>
+            <div class="col-10">
+              <p class="college_name" id="mail"> College Name</p>
+            </div>
+          </div>
+          <!-- end of college name -->
+
+          <button type="button" class="btn btn-primary">Edit Profile</button>
+          <button type="button" class="btn btn-primary">Change Password</button>
+
         </div>
-        <!-- end of name row -->
-
-        <!-- mail id row -->
-        <div class="row">
-          <div class="col-2">
-            <p> Mail ID: </p>
-          </div>
-          <div class="col-10">
-            <p class="mail-id" id="mail"> Student@gmail.com</p>
-          </div>
-        </div>
-        <!-- end of mail id -->
-
-        <!-- branch row -->
-        <div class="row">
-          <div class="col-2">
-            <p> Branch: </p>
-          </div>
-          <div class="col-10">
-            <p class="branch" id="mail"> Student Branch</p>
-          </div>
-        </div>
-        <!-- end of branch -->
-
-         <!-- college name  -->
-         <div class="row">
-          <div class="col-2">
-            <p> College: </p>
-          </div>
-          <div class="col-10">
-            <p class="college_name" id="mail"> College Name</p>
-          </div>
-        </div>
-        <!-- end of college name -->
-
-        <button type="button" class="btn btn-primary">Edit Profile</button>
-        <button type="button" class="btn btn-primary">Change Password</button>
-
+      </div>
     </div>
   </div>
 </div>
-</div>
 
-<div class ="ViewExams">
-  
-    <center>
+<div class="ViewExams">
+
+  <center>
     <div id="Subject">
-        Subject 1
-        <button type=submit class="button-viewExams block">View Exams</button>
+      Subject 1
+      <button type=submit class="button-viewExams block">View Exams</button>
     </div>
     <div id="Subject">
-        Subject 2
-        <button type=submit class="button-viewExams block">View Exams</button>
+      Subject 2
+      <button type=submit class="button-viewExams block">View Exams</button>
     </div>
     <div id="Subject">
-        Subject 3
-        <button type=submit class="button-viewExams block">View Exams</button>
+      Subject 3
+      <button type=submit class="button-viewExams block">View Exams</button>
     </div>
     <div id="Subject">
-        Subject 4
-        <button type=submit class="button-viewExams block">View Exams</button>
+      Subject 4
+      <button type=submit class="button-viewExams block">View Exams</button>
     </div>
-</center>
+  </center>
 
 </div>
 
 
 
 </body>
+
 </html>

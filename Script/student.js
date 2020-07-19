@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
  });
 
  // Or with jQuery
-
+var toggleKey=true;
  /*$(document).ready(function(){
    $('.sidenav').sidenav();
  });*/
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 /* function to display profile*/
 function displayProfile(){
   toggleKey=false;
-  console.log("Profile is pressed")
+  console.log("Profile is pressed");
   var profile =document.getElementById("student_Profile");
   profile.style.display="block";
   var viewexam=document.getElementsByClassName("ViewExams");
