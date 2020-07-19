@@ -16,3 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /*End of Side Navbar in Mobile*/
+
+
+/* To Hide Login Form and Display Default HomePage */
+function displayLoginForm(){
+  console.log("Login Button is pressed");
+  var login_block = document.getElementById("loginBlock");
+  login_block.style.display="inline";
+  console.log("Disabled default homepage and enabled login form");
+}
+
+/* End of To Hide Login Form and Display Default HomePage */
