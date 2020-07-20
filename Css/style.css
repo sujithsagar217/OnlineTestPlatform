@@ -48,6 +48,7 @@ body{
   box-shadow:0 16px 32px 0 rgba(43, 43, 43, 0.7);
   margin:auto;
   padding:auto;
+  margin: auto;
 }
 .basic-details-group{
   background-color: rgb(200, 229, 255);
