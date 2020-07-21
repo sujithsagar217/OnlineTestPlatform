@@ -22,6 +22,7 @@ body{
   height: 100vh;
   width: 100%;
 }
+
 .login-form{
   max-width: 100%;
   width: 370px;
@@ -57,5 +58,19 @@ body{
 }
 .clg_details{
   text-align: center;
+}
+.modal{
+  position: fixed;
+  top: 5rem;
+  height: 100%;
+}
+.modal-lg{
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.modal-sm{
+  max-width: fit-content;
 }
 

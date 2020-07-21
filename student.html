@@ -18,6 +18,7 @@
   <title>OnlineExam</title>
   <script src="Script/student.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <!--
@@ -84,10 +85,10 @@ li a:hover:not(.active) {
     <a href="#!" class="brand-logo">Online Exam Portal</a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a onclick="displayProfile()" >Profile</a></li>
-      <li><a onclick="viewExams()">View Exams</a></li>
-      <li><a href="#">View Results</a></li>
-      <li><a href="index.html">Logout</a></li>
+      <li><a onclick="displayProfile()" ><i class="far fa-id-card" style="font-size: 17px;"></i> Profile</a></li>
+      <li><a onclick="viewExams()"><i class='far fa-file-alt' style="font-size: 17px;"></i> View Exams</a></li>
+      <li><a href="#"><i class='far fa-file-alt' style="font-size: 17px;"></i> View Results</a></li>
+      <li><a href="index.html"><i class="fa fa-sign-out" style="font-size: 17px;"></i> Logout</a></li>
     </ul>
   </div>
 </nav>
@@ -156,7 +157,7 @@ li a:hover:not(.active) {
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit Profile</button>
           <!-- The Modal -->
           <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg">
               <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -167,8 +168,8 @@ li a:hover:not(.active) {
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                  <div class="edit-profile-container d-flex align-items-center ">
-                    <form class="login-form">
+                  <div class="edit-profile-container">
+                    <form class="login-form1">
                       <div class="form-group">
                         <input type="text" class="form-control" id="fname" placeholder="Enter First name" name="First name">
                       </div>
