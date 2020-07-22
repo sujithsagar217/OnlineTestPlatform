@@ -95,8 +95,16 @@
     max-width: fit-content;
   }
 
-
   </style>
+  <style>
+    .search {
+      display: none;
+    }
+    .search-box{
+        width: fit-content;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -110,7 +118,7 @@
         <li><a href="lecturer.html"><i class="far fa-id-card" style="font-size: 17px;"></i> Profile</a></li>
         <li><a href="#"><i class='fas fa-pen' style='font-size:17px'></i> Create exam</a></li>
         <li><a href="#"><i class='far fa-file-alt' style="font-size: 17px;"></i> View exams</a></li>
-        <li><a href="#"><i class='far fa-file-alt' style="font-size: 17px;"></i> View Results</a></li>
+        <li><a onclick="viewResults()"><i class='far fa-file-alt' style="font-size: 17px;"></i> View Results</a></li>
         <li><a href="index.html"><i class="fa fa-sign-out" style="font-size: 17px;"></i> Logout</a></li>
       </ul>
     </div>
@@ -140,14 +148,53 @@
     <li><a href="lecturer.html">Profile</a></li>
     <li><a href="#">Create exam</a></li>
     <li><a href="#">View exams</a></li>
-    <li><a href="#">View Results</a></li>
+    <li><a onclick="viewResults()">View Results</a></li>
     <li><a href="index.html">Logout</a></li>
   </ul>
+<div class="search">
+  <div class="search-box">
+    <input class="search-txt" type="text" placeholder="Type to search" />
+    <a class="search-btn" href="#">
+      <i class="fas fa-search"></i>
+    </a>
+    <div class="results-table">
+    <table>
+      <thead>
+        <tr>
+            <th>Name</th>
+            <th>Exam name</th>
+            <th>Exam marks</th>
+        </tr>
+      </thead>
 
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>OS</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>CN</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>DS</td>
+          <td>8</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  </div>
+</div>
+<div id="faculty_profile">
   <div class="clg_details">
     <h3>College Name</h3>
     <p>College address</p>
   </div>
+  
   <div class="container-fluid">
     <div class="card">
       <div class="card-body">
@@ -194,6 +241,7 @@
               <p class="college_name" id="mail"> college name</p>
             </div>
           </div>
+        
           <!-- end of college name -->
 
           <!--Edit profile Button-->
@@ -273,6 +321,7 @@
               </div>
             </div>
           </div>
+        </div>
           <!--End of Change password button-->
 
         </div>
