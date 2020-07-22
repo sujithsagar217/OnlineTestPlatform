@@ -1,3 +1,4 @@
+
 /*Side Navbar in Mobile*/
 document.addEventListener('DOMContentLoaded', function() {
    var elems = document.querySelectorAll('.sidenav');
@@ -53,7 +54,3 @@ document.addEventListener('DOMContentLoaded', function() {
 // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
 
 // Or with jQuery
-
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
