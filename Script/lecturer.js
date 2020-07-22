@@ -42,10 +42,10 @@ function displayProfile(){
   console.log("Profile is pressed");
   var profile =document.getElementById("student_profile");
   profile.style.display="block";
-  var viewexam=document.getElementsByClassName("search");
+  var viewres=document.getElementsByClassName("search");
   var i=0;
-  for(i=0;i<viewexam.length;i++){
-    viewexam[i].style.display="none";
+  for(i=0;i<viewres.length;i++){
+    viewres[i].style.display="none";
   }
   console.log("Profile is enabled View results is disabled");
 }
